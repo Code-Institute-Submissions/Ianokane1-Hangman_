@@ -1,4 +1,5 @@
 import os
+import random
 
 def clear():
     os.system("cls")
@@ -15,5 +16,34 @@ if __name__ == "_main_":
      "Marvel Characters":["CAPTAIN AMERICA", "IRON MAN", "THANOS", "HAWKEYE", "BLACK PANTHER", "BLACK WIDOW", "SPIDERMAN",
      "STARLORD", "THOR", "DOCTOR STRANGE"]
      }
+
+    while True:
+        print()
+        print("---------------------")
+        print("\t\tGAME MENU")
+        print("---------------------")
+        for key in topics:
+            print("Press", key, "to select", topics[key])
+            print("Press", len(topics) + 1, "to quit")
+            print()
+        try:
+            choice = int(input("Enter your choice = "))
+        except ValueError:
+            clear()
+            print("Wrong choice!! Try again")
+            continue
+
+        if choice > len(topics)+1:
+            clear()
+            print("No such topic!! Try again.")
+            continue
+        elif choice == len(topics)+1:
+            print()
+            print("Thank you for playing!")
+            break
+        
+        chosen_topic = topics[choice]
+        ran = random.choice(dataset[chosen_topic])
+        hangman_game(word)    
 
     

@@ -4,7 +4,7 @@ import random
 def clear():
     os.system("cls")
 
-def print_hangman(vaulues):
+def print_hangman(values):
     print()
     print("\t +--------+")
     print("\t |       | |")
@@ -15,7 +15,14 @@ def print_hangman(vaulues):
     print("\t         | |")
     print("  _______________|_|___")
     print("  `````````````````````")
-    print()  
+    print()
+
+def print_word(values):
+    print()
+    print("\t", end="")
+    for x in values:
+        print(x, end="")
+    print()      
 
 def hangman_game(word):
     clear()
@@ -36,7 +43,44 @@ def hangman_game(word):
         clear()
         print_hangman(show_hangman_values)
         print_word(word_display)
-        print()    
+        print()
+
+        inp = input("Enter a character = ")
+        if len(inp) != 1:
+            clear()
+            print("Wrong choice!! Try Again")
+            continue
+        if not inp[0].isalpha():
+            clear()
+            print("Wrong choice!! Try Again")
+        if inp.upper() in incorrect:
+            clear()
+            print("Already tried!!")
+            continue
+
+        if inp.upper() not in correct_letters:
+            incorrect.append(inp.upper())
+            show_hangman_values[chances] = hangman_values[chances]
+            chances = chances + 1
+            if chances == len(hangman_values):
+                print()
+                clear()
+                print("\tGame Over!!")
+                print_hangman(hangman_values)
+                print("The word is :", word.upper())
+                break
+        else:
+            for i in range(len(word)):
+                if word[i].upper() == inp.upper():
+                    word_display[i] = inp.upper()
+            if check_win(word_display):
+                clear()
+                print("\tCongratulations!")
+                print_hangman_win()
+                print("The word is :", word.upper())
+                break
+        
+            
 
 if __name__ == "_main_":
     clear()

@@ -17,6 +17,21 @@ def print_hangman(values):
     print("  `````````````````````")
     print()
 
+def print_hangman_win():
+    print()
+    print("\t +--------+")
+    print("\t         | |")
+ 
+    print("\t         | |")
+    print("\t O       | |")
+    print("\t/|\\      | |")
+    print("\t |       | |")
+    print("  ______/_\\______|_|___")
+    print("  `````````````````````")
+    print()
+
+word_display = []    
+
 def print_word(values):
     print()
     print("\t", end="")

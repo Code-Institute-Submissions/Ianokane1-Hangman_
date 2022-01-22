@@ -1,8 +1,9 @@
-import os
 import random
+import os
 
 def clear():
     os.system("cls")
+
 
 def print_hangman(values):
     print()
@@ -30,7 +31,7 @@ def print_hangman_win():
     print("  `````````````````````")
     print()
 
-word_display = []    
+word_display = []
 
 def print_word(values):
     print()
@@ -43,7 +44,7 @@ def check_win(values):
     for char in values:
         if char == '_':
             return False
-    return True          
+    return True
 
 def hangman_game(word):
     clear()
@@ -64,6 +65,8 @@ def hangman_game(word):
         clear()
         print_hangman(show_hangman_values)
         print_word(word_display)
+        print()
+        print("Incorrect characters: ", incorrect)
         print()
 
         inp = input("Enter a character = ")
@@ -103,7 +106,7 @@ def hangman_game(word):
         
             
 
-if __name__ == "_main_":
+if __name__ == "__main__":
     clear()
 
     topics = {1: "Football players", 2: "Rockstars", 3: "Marvel Characters"}
@@ -143,6 +146,5 @@ if __name__ == "_main_":
         
         chosen_topic = topics[choice]
         ran = random.choice(dataset[chosen_topic])
-        hangman_game(word)    
-
+        hangman_game(ran)
     

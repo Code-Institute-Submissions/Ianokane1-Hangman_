@@ -74,7 +74,7 @@ def hangman_game(word):
         print("Incorrect characters: ", incorrect)
         print()
 
-        inp = input("Enter a character = ")
+        inp = input("Enter a character =\n")
         if len(inp) != 1:
             clear()
             print("Wrong choice!! Try Again")
@@ -164,7 +164,7 @@ if __name__ == "__main__":
             print("Press", len(topics) + 1, "to quit")
             print()
         try:
-            choice = int(input("Enter your choice = "))
+            choice = int(input("Enter your choice =\n"))
         except ValueError:
             clear()
             print("Wrong choice!! Try again")

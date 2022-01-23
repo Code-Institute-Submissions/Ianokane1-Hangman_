@@ -124,7 +124,8 @@ if __name__ == "__main__":
             "NGOLO KANTE",
             "KYLIAN MBAPPE",
             "NEYMAR",
-            "KARIM BENZEMA" "DANI ALVES",
+            "KARIM BENZEMA", 
+            "DANI ALVES",
             "ZLATAN IBRAHIMOVIC",
         ],
         "Rockstars": [

@@ -13,8 +13,7 @@ This is done by using python to generate the word and check if the user's guesse
 1. [Plans and structure](#plans-and-structure)
     - [Objectives](#objectives)
     - [Changes throughout the process](#changes-throughout-the-process)
-2. [Color scheme](#color-scheme)
-3. [Features](#features)
+2. [Features](#features)
     - [Welcome page](#welcome-page)
     - [Instructions](#instructions)
     - [Game](#game)
@@ -23,13 +22,13 @@ This is done by using python to generate the word and check if the user's guesse
     - [Colored text](#colored-text) 
     - [Clear terminal](#clear-terminal)
     - [Extra features](#extra-features)
-4. [Testing](#testing)
+3. [Testing](#testing)
     - [Python](#python)
     - [Manual Testing](#manual-testing)
     - [Bugs](#bugs)
-5. [Deployment](#deployment)
-6. [Finished product](#finished-product)
-7. [Credits](#credits)
+4. [Deployment](#deployment)
+5. [Finished product](#finished-product)
+6. [Credits](#credits)
 
 ## Plans and structure 
 
@@ -84,6 +83,6 @@ Go back to [Table of contents](#table-of-contents)
 <img src="images/hangmanwin.png" alt="Screenshot of the end of the game if the player has won">
 
 ### Potential features to add in future
-- If I had enough time at the end of this project to give the user the choice of an easy game or a hard game I would have. 
+- I would like to return to this project and add a welcome page as well as difficulty settings. 
 
 Go back to [Table of contents](#table-of-contents)

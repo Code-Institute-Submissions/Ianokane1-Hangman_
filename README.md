@@ -63,4 +63,6 @@ Throughout the process of making this project I decided to change a couple of th
 
 I decided that this idea was not as important as all the other functions so I would like to either implement them if I have time to at the end of the process or if not, I would like to implement them in the future so I can continue to use this game with family and friends. 
 
-Go back to [Table of contents](#table-of-contents)         
+Go back to [Table of contents](#table-of-contents)
+
+

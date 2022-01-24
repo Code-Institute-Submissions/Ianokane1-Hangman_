@@ -151,10 +151,6 @@ if __name__ == "__main__":
             clear()
             print("No such topic!! Try again.")
             continue
-        elif choice == len(topics) + 1:
-            print()
-            print("Thank you for playing! To play again select category.")
-            break
 
         chosen_topic = topics[choice]
         ran = random.choice(dataset[chosen_topic])

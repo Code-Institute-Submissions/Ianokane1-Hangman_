@@ -83,3 +83,50 @@ Go back to [Table of contents](#table-of-contents)
 - I would like to return to this project and add a welcome page as well as difficulty settings. 
 
 Go back to [Table of contents](#table-of-contents)
+
+## Testing
+
+### Python
+Python was tested using PEP8 [PEP8 validator](http://pep8online.com/) 
+
+The Python results came back with the following:
+
+<img src="images/pep8issues.png" alt="Screenshot of results">
+
+- numerous blank line errors and whitespace errors which were fixed using beautifier.
+
+- line 114 - 118 were fixed bu creating a seperate word file and stacking words. See below:
+
+<img src="images/words.png" alt="Screenshot of words file">
+
+- I then retested with PEP8 and it came back clear:
+<img src="images/pep8resolved.png" alt="pep8 after"> 
+
+### Manual Testing 
+
+1. Game menu appears
+
+ - First, I tested what would happen if the user typed anything other than 1 - 3: Error message shows, results were as expected. See below:
+
+ <img src="images/nosuchtopic.png" alt="Screenshot of invalid input"> 
+
+ - Next I tested what would happen if the user typed 1 - 3: results were as expected. All three options takes user to game.
+
+ - Next I tested what would happen if user correctly guessed a character, results were as expected. See below:
+
+ <img src="images/correct.png" alt="Screenshot of correct input"> 
+
+ - Next I tested what would happen if user incorrectly guessed a character, results were as expected. See below:
+
+ <img src="images/incorrect.png" alt="Screenshot of incorrect input"> 
+
+ - Next I tested what would happen if user guessed the word correctly, and if correct display message appeared. 
+ results were as expected. See below:
+
+ <img src="images/congrats.png" alt="Screenshot of congrats"> 
+
+ - Lastly I tested what would happen if user guessed the word incorrectly, and if correct display message appeared. 
+ results were as expected. See below:
+
+ <img src="images/gameover.png" alt="Screenshot of congrats"> 
+

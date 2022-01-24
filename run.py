@@ -107,9 +107,9 @@ def hangman_game(word):
             if chances == len(hangman_values):
                 print()
                 clear()
-                print("\tGame Over!!")
                 print_hangman(hangman_values)
                 print("The word is :", word.upper())
+                print("\tGame Over!! To play again select a category")
                 break
             # If the user wins and gets the whole word:
         else:
@@ -119,7 +119,7 @@ def hangman_game(word):
             if check_win(word_display):
                 clear()
                 print_hangman_win()
-                print("\tCongratulations! To play again hit 'Run Program'")
+                print("\tCongratulations! To play again select a category")
                 print("The word is :", word.upper())
                 break
 
@@ -146,15 +146,6 @@ if __name__ == "__main__":
             clear()
             print("Wrong choice!! Try again")
             continue
-
-        if choice > len(topics) + 1:
-            clear()
-            print("No such topic!! Try again.")
-            continue
-        elif choice == len(topics) + 1:
-            print()
-            print("Thank you for playing! To play again hit 'Run Program'")
-            break
 
         chosen_topic = topics[choice]
         ran = random.choice(dataset[chosen_topic])

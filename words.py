@@ -7,7 +7,7 @@ dataset = {
             "NGOLO KANTE",
             "KYLIAN MBAPPE",
             "NEYMAR",
-            "KARIM BENZEMA", 
+            "KARIM BENZEMA",
             "DANI ALVES",
             "ZLATAN IBRAHIMOVIC",
         ],

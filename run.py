@@ -8,6 +8,9 @@ def clear():
 
 
 def print_hangman(values):
+    """
+    Drawing of the hangman image.
+    """
     print()
     print("\t +--------+")
     print("\t |       | |")
@@ -22,6 +25,9 @@ def print_hangman(values):
 
 
 def print_hangman_win():
+    """
+    Drawing of the hangman image.
+    """
     print()
     print("\t +--------+")
     print("\t         | |")
@@ -53,6 +59,9 @@ def check_win(values):
 
 
 def hangman_game(word):
+    """
+    Get word from words.py, ask user to guess a letter.
+    """
     clear()
     word_display = []
     correct_letters = []
@@ -68,13 +77,16 @@ def hangman_game(word):
             word_display.append(char)
 
     while True:
+        """
+        Printed with correct and incorrect display
+        """
         clear()
         print_hangman(show_hangman_values)
         print_word(word_display)
         print()
         print("Incorrect characters: ", incorrect)
         print()
-
+# If the user already selected
         inp = input("Enter a character =\n")
         if len(inp) != 1:
             clear()
@@ -87,7 +99,7 @@ def hangman_game(word):
             clear()
             print("Already tried!!")
             continue
-
+        # If the user runs out of tries:
         if inp.upper() not in correct_letters:
             incorrect.append(inp.upper())
             show_hangman_values[chances] = hangman_values[chances]
@@ -99,6 +111,7 @@ def hangman_game(word):
                 print_hangman(hangman_values)
                 print("The word is :", word.upper())
                 break
+            # If the user wins and gets the whole word:
         else:
             for i in range(len(word)):
                 if word[i].upper() == inp.upper():
@@ -113,8 +126,11 @@ def hangman_game(word):
 
 if __name__ == "__main__":
     clear()
-
+# game menu to display all three options
     topics = {1: "Football players", 2: "Rockstars", 3: "Marvel Characters"}
+    """
+    Game Menu display
+    """
 
     while True:
         print()
@@ -123,7 +139,6 @@ if __name__ == "__main__":
         print("---------------------")
         for key in topics:
             print("Press", key, "to select", topics[key])
-            print("Press", len(topics) + 1, "to quit")
             print()
         try:
             choice = int(input("Enter your choice =\n"))

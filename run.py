@@ -147,6 +147,15 @@ if __name__ == "__main__":
             print("Wrong choice!! Try again")
             continue
 
+        if choice > len(topics) + 1:
+            clear()
+            print("No such topic!! Try again.")
+            continue
+        elif choice == len(topics) + 1:
+            print()
+            print("Thank you for playing! To play again select category.")
+            break
+
         chosen_topic = topics[choice]
         ran = random.choice(dataset[chosen_topic])
         hangman_game(ran)

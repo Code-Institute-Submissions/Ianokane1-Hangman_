@@ -65,4 +65,25 @@ I decided that this idea was not as important as all the other functions so I wo
 
 Go back to [Table of contents](#table-of-contents)
 
+## Features 
 
+### Game Menu
+- This is the first page you see when the app loads. On this page you will be presented with three options. Select options 1 - 3 and user will be brought to relevant page. Select an incorrect charcater and messages "No such topic" will display.
+<img src="images/hangmanmenu.png" alt="Screenshot of Game Menu">
+
+### Game
+- When the user has selected a category they will be shown a pre hangman image as well as an empty space for word. Incorrect character selections will also be displayed upon selection.
+<img src="images/hangmanimage.png" alt="Screenshot of Game Page">
+
+### Losing message
+- If a user runs out of guesses they will be shown game over message with instuctions to play again. Correct answer will also be displayed. Hangman image will de displayed as user guesses incorrect characters.
+<img src="images/hangmangameover.png" alt="Screenshot of the end of the game if the player has lost">
+
+### Winning message
+- If the user guesses all letter correctly they will be congratulated with instuctions to play again.
+<img src="images/hangmanwin.png" alt="Screenshot of the end of the game if the player has won">
+
+### Potential features to add in future
+- If I had enough time at the end of this project to give the user the choice of an easy game or a hard game I would have. 
+
+Go back to [Table of contents](#table-of-contents)

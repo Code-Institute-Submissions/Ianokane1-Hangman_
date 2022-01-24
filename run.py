@@ -1,9 +1,10 @@
 import random
 import os
+from words import dataset
 
 
 def clear():
-    os.system("clear")
+    os.system("cls" if os.name == "nt" else "clear")
 
 
 def print_hangman(values):
@@ -104,8 +105,8 @@ def hangman_game(word):
                     word_display[i] = inp.upper()
             if check_win(word_display):
                 clear()
-                print("\tCongratulations!")
                 print_hangman_win()
+                print("\tCongratulations! To play again hit 'Run Program'")
                 print("The word is :", word.upper())
                 break
 
@@ -115,50 +116,10 @@ if __name__ == "__main__":
 
     topics = {1: "Football players", 2: "Rockstars", 3: "Marvel Characters"}
 
-    dataset = {
-        "Football players": [
-            "MO SALAH",
-            "LIONEL MESSI",
-            "KEVIN DE BRUYNE",
-            "CRISTIANO RONALDO",
-            "NGOLO KANTE",
-            "KYLIAN MBAPPE",
-            "NEYMAR",
-            "KARIM BENZEMA", 
-            "DANI ALVES",
-            "ZLATAN IBRAHIMOVIC",
-        ],
-        "Rockstars": [
-            "LIAM GALLAGHER",
-            "AXEL ROSE",
-            "ERIC CLAPTON",
-            "SLASH",
-            "PAUL MCCARTNEY",
-            "MICK JAGGER",
-            "OZZY OSBOURNE",
-            "JIMI HENDRIX",
-            "BRUCE SPRINGSTEEN",
-            "JOHN LENNON",
-            "DAVID BOWIE",
-        ],
-        "Marvel Characters": [
-            "CAPTAIN AMERICA",
-            "IRON MAN",
-            "THANOS",
-            "HAWKEYE",
-            "BLACK PANTHER",
-            "BLACK WIDOW",
-            "SPIDERMAN",
-            "STARLORD",
-            "THOR",
-            "DOCTOR STRANGE",
-        ],
-    }
-
     while True:
         print()
         print("---------------------")
-        print("\t\tGAME MENU")
+        print("\t\tHANGMAN")
         print("---------------------")
         for key in topics:
             print("Press", key, "to select", topics[key])
@@ -177,7 +138,7 @@ if __name__ == "__main__":
             continue
         elif choice == len(topics) + 1:
             print()
-            print("Thank you for playing!")
+            print("Thank you for playing! To play again hit 'Run Program'")
             break
 
         chosen_topic = topics[choice]

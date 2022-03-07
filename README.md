@@ -13,6 +13,7 @@ This is done by using python to generate the word and check if the user's guesse
 1. [Plans and structure](#plans-and-structure)
     - [Objectives](#objectives)
     - [Changes throughout the process](#changes-throughout-the-process)
+    - [Libraries used](#libraries-used)
 2. [Features](#features)
     - [Game Menu](#game-menu)
     - [Game](#game)
@@ -58,6 +59,14 @@ Throughout the process of making this project, I decided to change a couple of t
 - Originally, I planned to have difficulty settings where the user could select easy, medium, or hard. I opted to keep it simple and instead use three category options.
 
 I decided that this idea was not as important as all the other functions so I would like to either implement them if I have time to at the end of the process or if not, I would like to implement them in the future so I can continue to use this game with family and friends. 
+
+### Libraries used
+
+1. ## Random
+- The above was used to generate a random word from dataset of the chosen topic.
+
+2. ## OS
+- The OS module provided functions for interacting with the operating system.
 
 Go back to [Table of contents](#table-of-contents)
 
